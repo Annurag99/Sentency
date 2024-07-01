@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1 #{title}
+
+      table.ui.celled.table.center.aligned
+        thead
+          tr.th-table
+            th Total Character count
+            th Total Count of Alphabets(Lower Case)
+            th Total Count of Alphabets(Upper Case)
+            th Total Count of Non-alphabetic characters
+            th Average of Alphabetic Characters
+            th Average of Non-Alphabetic Characters
+        tbody
+            each sentence, i in sentences
+                tr
+                    td #{sentence.body.length}
+                    td #{(sentence.body.match(/[a-z]/g) || []).length}
+                    td #{(sentence.body.match(/[A-Z]/g) || []).length}
+                    td #{(sentence.body.match(/[0-9\W_]+/i) || []).length}
+                    td #{Math.round(sentence.body.length/((sentence.body.match(/[a-z]/g) || []).length+(sentence.body.match(/[A-Z]/g) || []).length))}
+                    td #{Math.round(sentence.body.length/((sentence.body.match(/[0-9\W_]+/i) || []).length))}

@@ -27,7 +27,7 @@ Clone the repository:
 
 sh
 Copy code
-git clone https://github.com/your-username/sentence-task-tracking-dashboard.git
+git clone git@github.com:Annurag99/Sentency.git
 cd sentence-task-tracking-dashboard
 Install server dependencies:
 

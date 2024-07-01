@@ -10,7 +10,7 @@ MongoDB (Mongoose)
 Frontend:
 Pug
 
-#Authentication:
+# Authentication:
 Passport (passport-local)
 Session Management:
 express-session
@@ -22,7 +22,7 @@ connect-flash
 body-parser
 bower
 
-#Installation
+# Installation
 Clone the repository:
 
 sh
@@ -55,7 +55,7 @@ Copy code
 npm start
 Open your browser: Go to http://localhost:3000
 
-#Usage
+# Usage
 Sign up / Log in: Create a new account or log in with an existing one.
 Manage Tasks: Add, edit, or delete tasks.
 View Task List: See all your tasks in a structured format.
